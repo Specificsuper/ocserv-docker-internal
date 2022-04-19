@@ -1,0 +1,9 @@
+ocserv:
+  image: ocserv-docker
+  ports:
+    - "30443:443/tcp"
+    - "30443:443/udp"
+  restart: always
+  volumes:
+      - /home/ocserv-docker/ocserv:/etc/ocserv
+  privileged: true
