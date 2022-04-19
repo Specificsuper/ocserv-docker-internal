@@ -18,15 +18,7 @@ RUN apt-get update && apt-get install -y \
     libhttp-parser-dev libpcl1-dev libopts25-dev autogen pkg-config nettle-dev \
     gnutls-bin gperf liblockfile-bin nuttcp lcov iptables unzip dnsmasq \
     && rm -rf /var/lib/apt/lists/*
-
-# configuration dnsmasq
-RUN mkdir -p /temp && cd /temp \
-    && wget https://hub.fastgit.xyz/felixonmars/dnsmasq-china-list/archive/master.zip \
-    && unzip master.zip \
-    && cd dnsmasq-china-list-master \
-    && cp *.conf /etc/dnsmasq.d/ \
-    && cd / && rm -rf /temp
-
+    
 # configuration lz4
 RUN mkdir -p /temp && cd /temp \
     && wget https://hub.fastgit.xyz/lz4/lz4/releases/latest -O lz4.html \
