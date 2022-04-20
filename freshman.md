@@ -1,4 +1,6 @@
 # ocserv 搭建（docker版）
+<!--ts-->
+<!--te-->
 ## 1环境准备
 >  准备linux 服务器一台，这里以 centos为例其他系统如ubuntu请参考[https://mirrors.tuna.tsinghua.edu.cn/help/docker-ce/](https://mirrors.tuna.tsinghua.edu.cn/help/docker-ce/)
 ## 2 安装docker
